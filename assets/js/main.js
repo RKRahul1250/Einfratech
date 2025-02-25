@@ -177,3 +177,15 @@ const express = require('express');
 const app = express();
 app.use(express.static(__dirname)); // Serves static files
 app.listen(3000, () => console.log('Server running on port 3000'));
+
+
+function openModal() {
+  document.getElementById("solutionsModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("solutionsModal").style.display = "none";
+}
+
+
+

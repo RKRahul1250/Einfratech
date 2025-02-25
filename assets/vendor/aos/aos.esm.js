@@ -137,7 +137,7 @@ var Detector = function () {
       return this.mobile() && !this.phone();
     }
 
-    // http://browserhacks.com/#hack-acea075d0ac6954f275a70023906050c
+    
 
   }, {
     key: 'ie11',
@@ -270,8 +270,7 @@ var offset = function offset(el) {
 };
 
 /**
- * Get inline option with a fallback.
- *
+
  * @param  {Node} el [Dom element]
  * @param  {String} key [Option key]
  * @param  {String} fallback [Default (fallback) value]
@@ -292,14 +291,7 @@ var getInlineOption = (function (el, key, fallback) {
   return attr || fallback;
 });
 
-/**
- * Calculate offset
- * basing on element's settings like:
- * - anchor
- * - offset
- *
- * @param  {Node} el [Dom element]
- * @return {Integer} [Final offset that will be used to trigger animation in good position]
+
  */
 
 var getPositionIn = function getPositionIn(el, defaultOffset, defaultAnchorPlacement) {
